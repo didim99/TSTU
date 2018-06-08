@@ -119,14 +119,14 @@ T *LinkedList<T>::get(size_t index) {
 
 template <typename T>
 bool LinkedList<T>::next() {
-  if (!currItem->next) return false;
+  if (!currItem || !currItem->next) return false;
   currItem = currItem->next;
   return true;
 }
 
 template <typename T>
 bool LinkedList<T>::prev() {
-  if (!currItem->prev) return false;
+  if (!currItem || !currItem->prev) return false;
   currItem = currItem->prev;
   return true;
 }
