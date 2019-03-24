@@ -13,7 +13,6 @@
 #include "terminal.h"
 
 #define PROC_CNT  8
-#define NAME_SIZE 64
 #define RND_MAX   1000000001
 #define DATA_FILE "./src.dat"
 
