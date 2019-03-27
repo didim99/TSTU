@@ -1,0 +1,46 @@
+body {
+  margin: 5px auto;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-family: "Verdana";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 2px 15px;
+  background-color: #ddd;
+  border: 1px solid #666;
+  border-radius: 2px;
+  color: #666;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+button:active {
+  border-color: #222;
+  color: #222;
+}
+
+button#start {
+  width: 80px;
+}
+
+div.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+}
+
+canvas.plot {
+  display: block;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #222;
+}
