@@ -48,7 +48,7 @@
             <TextBlock Text="Окончание" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="1" Grid.Column="0" TextAlignment="Right" Margin="10"/>
             <TextBox Name="EtEnd" Text="{Binding TEnd, Mode=TwoWay}" Grid.Row="1" Grid.Column="1" InputScope="Time"/>
 
-            <TextBlock Text="Коипания" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="2" Grid.Column="0" TextAlignment="Right" Margin="10"/>
+            <TextBlock Text="Компания" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="2" Grid.Column="0" TextAlignment="Right" Margin="10"/>
             <TextBox Name="EtCompany" Text="{Binding Company, Mode=TwoWay}" Grid.Row="2" Grid.Column="1"/>
 
             <TextBlock Text="Адрес" Style="{StaticResource PhoneTextNormalStyle}" Grid.Row="3" Grid.Column="0" TextAlignment="Right" Margin="10"/>
