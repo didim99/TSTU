@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+  signingConfigs {
+    tstuConfig {
+      storeFile file("${rootDir}/../../keys/tstuKeystore.jks")
+      storePassword 's3d6yBKvK6ART9dJrKDfDF6ygrGjJbwkraTe7UqgRC5vPeXk'
+      keyAlias 'tstuDefault'
+      keyPassword 'jzLVCQqUsJ4b6k3zVcTxguRGqc6awKEP'
+    }
+  }
+  compileSdkVersion 28
+  defaultConfig {
+    applicationId "ru.didim99.tstu.networkauto"
+    minSdkVersion 15
+    targetSdkVersion 28
+    versionCode 1
+    versionName "1.0"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    signingConfig signingConfigs.tstuConfig
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled true
+      shrinkResources true
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  compileOptions {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation 'androidx.appcompat:appcompat:1.1.0'
+  testImplementation 'junit:junit:4.12'
+  androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
